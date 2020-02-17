@@ -4,7 +4,7 @@ class FiguresController < ApplicationController
   end
 
   get '/figures/new' do
-    @landmarks = Landmarks.all
+    @landmarks = Landmarks.all[:name]
     erb:'/figures/new'
   end
 
